@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gaming Atmosphere</title>
+  <title></title>
   <style>
     * {
       box-sizing: border-box;
@@ -106,7 +106,7 @@
 </head>
 <body>
   <header>
-    <h1>Gaming Atmosphere</h1>
+    <h1></h1>
     <div class="search-bar">
       <input type="text" placeholder="Search games..." />
     </div>
@@ -120,16 +120,16 @@
 
   <section class="games-section">
     <div class="game-card">
-      <h3>Galaxy Racer</h3>
-      <p>Race through stars in a galaxy arena!</p>
+      <h3>Action Games</h3>
+      <p>Show Your Action On Bed</p>
     </div>
     <div class="game-card">
-      <h3>Neon Clash</h3>
-      <p>Battle in a cyberpunk city of light.</p>
+      <h3>Open world Games</h3>
+      <p>Open Everything in the World.</p>
     </div>
     <div class="game-card">
-      <h3>Puzzle Glow</h3>
-      <p>Relax and solve glowing puzzles.</p>
+      <h3>Shooting Games</h3>
+      <p>Shoot with right angle with right position</p>
     </div>
   </section>
 
