@@ -3,71 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neon Game Zone</title>
+  <title>Gaming Atmosphere</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0e0e10;
+      background-color: #0d0d1a;
       color: #f0f0f0;
     }
     header {
-      background: linear-gradient(90deg, #6a00ff, #00ffff);
-      padding: 20px;
+      background: linear-gradient(90deg, #6a00ff, #00c3ff);
+      padding: 15px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: #000;
+      flex-wrap: wrap;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 1.8rem;
+      color: #ffffff;
     }
     .search-bar {
-      display: flex;
-      align-items: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+    @media(min-width: 600px) {
+      .search-bar {
+        width: auto;
+        margin-top: 0;
+      }
     }
     .search-bar input[type="text"] {
-      padding: 8px 15px;
+      padding: 8px 12px;
       border: none;
       border-radius: 20px;
       outline: none;
       font-size: 1rem;
       background: #d2e4ff;
       color: #000;
+      width: 100%;
+      max-width: 200px;
     }
     .hero {
       text-align: center;
-      padding: 60px 20px;
-      background: #1a1a1d;
+      padding: 40px 15px;
+      background: #1a1a2e;
     }
     .hero h2 {
-      font-size: 2rem;
-      color: #00ffff;
+      font-size: 1.8rem;
+      color: #00eaff;
+      margin-bottom: 10px;
     }
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #ccc;
     }
     .games-section {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
       gap: 20px;
-      padding: 40px 20px;
+      padding: 30px 15px;
+    }
+    @media(min-width: 600px) {
+      .games-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
     .game-card {
-      background-color: #2a2a2d;
+      background-color: #222233;
       border: 2px solid #6a00ff;
       border-radius: 15px;
       padding: 20px;
-      width: 250px;
       text-align: center;
-      transition: 0.3s;
+      width: 100%;
     }
-    .game-card:hover {
-      transform: scale(1.05);
-      border-color: #00ffff;
+    @media(min-width: 600px) {
+      .game-card {
+        width: 250px;
+      }
     }
     .game-card h3 {
       color: #ffffff;
@@ -80,9 +99,9 @@
     .cta-button {
       display: inline-block;
       margin-top: 20px;
-      padding: 12px 30px;
+      padding: 10px 25px;
       font-size: 1rem;
-      background: #00ffff;
+      background: #00eaff;
       color: #000;
       border: none;
       border-radius: 30px;
@@ -94,9 +113,9 @@
       color: #fff;
     }
     footer {
-      background-color: #0e0e10;
+      background-color: #0d0d1a;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       font-size: 0.8rem;
       color: #888;
     }
@@ -104,35 +123,35 @@
 </head>
 <body>
   <header>
-    <h1>Neon Game Zone</h1>
+    <h1>Gaming Atmosphere</h1>
     <div class="search-bar">
       <input type="text" placeholder="Search games...">
-</header>
     </div>
-  
+  </header>
+
   <section class="hero">
     <h2>Play the Coolest Games</h2>
-    <p>Explore a world of neon-fueled action, strategy, and adventure!</p>
+    <p>Dive into a world of thrilling action, neon visuals, and epic adventures!</p>
     <a href="#games"><button class="cta-button">Browse Games</button></a>
   </section>
 
   <section class="games-section" id="games">
     <div class="game-card">
-      <h3>Cyber Dash</h3>
-      <p>A futuristic runner with neon vibes and high-speed action.</p>
+      <h3>Galaxy Racer</h3>
+      <p>Race through the stars in a futuristic galaxy arena.</p>
     </div>
     <div class="game-card">
-      <h3>Laser Blaster</h3>
-      <p>Blast your way through enemy zones in this arcade-style shooter.</p>
+      <h3>Neon Clash</h3>
+      <p>Battle with glowing weapons in cyberpunk city streets.</p>
     </div>
     <div class="game-card">
-      <h3>Glow Puzzle</h3>
-      <p>Relax and solve glowing puzzles with ambient synthwave music.</p>
+      <h3>Puzzle Glow</h3>
+      <p>Relax and solve puzzles under neon light effects.</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Neon Game Zone. All rights reserved.
+    &copy; 2025 Gaming Atmosphere. All rights reserved.
   </footer>
 </body>
 </html>
