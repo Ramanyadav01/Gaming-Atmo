@@ -11,39 +11,32 @@
       padding: 0;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #0d0d1a;
-      color: #f0f0f0;
+      color: #fff;
     }
     header {
-      background: linear-gradient(90deg, #6a00ff, #00c3ff);
-      padding: 15px 20px;
+      background: linear-gradient(to right, #6a00ff, #00c3ff);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 15px 20px;
       flex-wrap: wrap;
     }
     header h1 {
-      font-size: 1.8rem;
-      color: #ffffff;
+      font-size: 1.5rem;
     }
     .search-bar {
       margin-top: 10px;
-      width: 100%;
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: flex-end;
     }
-    @media(min-width: 600px) {
-      .search-bar {
-        width: auto;
-        margin-top: 0;
-      }
-    }
-    .search-bar input[type="text"] {
+    .search-bar input {
       padding: 8px 12px;
-      border: none;
       border-radius: 20px;
-      outline: none;
-      font-size: 1rem;
-      background: #d2e4ff;
+      border: none;
+      background-color: #d2e4ff;
       color: #000;
       width: 100%;
       max-width: 200px;
@@ -51,53 +44,18 @@
     .hero {
       text-align: center;
       padding: 40px 15px;
-      background: #1a1a2e;
+      background-color: #1a1a2e;
     }
     .hero h2 {
       font-size: 1.8rem;
       color: #00eaff;
-      margin-bottom: 10px;
     }
     .hero p {
       font-size: 1rem;
       color: #ccc;
-    }
-    .games-section {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 30px 15px;
-    }
-    @media(min-width: 600px) {
-      .games-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-    .game-card {
-      background-color: #222233;
-      border: 2px solid #6a00ff;
-      border-radius: 15px;
-      padding: 20px;
-      text-align: center;
-      width: 100%;
-    }
-    @media(min-width: 600px) {
-      .game-card {
-        width: 250px;
-      }
-    }
-    .game-card h3 {
-      color: #ffffff;
-      margin: 10px 0;
-    }
-    .game-card p {
-      color: #aaaaaa;
-      font-size: 0.9rem;
+      margin-top: 10px;
     }
     .cta-button {
-      display: inline-block;
       margin-top: 20px;
       padding: 10px 25px;
       font-size: 1rem;
@@ -106,17 +64,42 @@
       border: none;
       border-radius: 30px;
       cursor: pointer;
-      transition: 0.3s;
     }
-    .cta-button:hover {
-      background: #6a00ff;
-      color: #fff;
+    .games-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    @media (min-width: 600px) {
+      .games-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 900px) {
+      .games-section {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .game-card {
+      background: #222233;
+      border: 2px solid #6a00ff;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+    .game-card h3 {
+      margin-bottom: 10px;
+    }
+    .game-card p {
+      font-size: 0.9rem;
+      color: #aaa;
     }
     footer {
-      background-color: #0d0d1a;
       text-align: center;
       padding: 15px;
       font-size: 0.8rem;
+      background-color: #0d0d1a;
       color: #888;
     }
   </style>
@@ -125,28 +108,28 @@
   <header>
     <h1>Gaming Atmosphere</h1>
     <div class="search-bar">
-      <input type="text" placeholder="Search games...">
+      <input type="text" placeholder="Search games..." />
     </div>
   </header>
 
   <section class="hero">
     <h2>Play the Coolest Games</h2>
-    <p>Dive into a world of thrilling action, neon visuals, and epic adventures!</p>
-    <a href="#games"><button class="cta-button">Browse Games</button></a>
+    <p>Dive into action, neon visuals, and thrilling adventures!</p>
+    <button class="cta-button">Browse Games</button>
   </section>
 
-  <section class="games-section" id="games">
+  <section class="games-section">
     <div class="game-card">
       <h3>Galaxy Racer</h3>
-      <p>Race through the stars in a futuristic galaxy arena.</p>
+      <p>Race through stars in a galaxy arena!</p>
     </div>
     <div class="game-card">
       <h3>Neon Clash</h3>
-      <p>Battle with glowing weapons in cyberpunk city streets.</p>
+      <p>Battle in a cyberpunk city of light.</p>
     </div>
     <div class="game-card">
       <h3>Puzzle Glow</h3>
-      <p>Relax and solve puzzles under neon light effects.</p>
+      <p>Relax and solve glowing puzzles.</p>
     </div>
   </section>
 
