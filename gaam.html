@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming Atmos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #00ffe7;
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .search-bar {
+      margin-top: 1rem;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    nav {
+      background: #141414;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.7rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      background: #222;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: #00ffe7;
+      color: #000;
+    }
+
+    .special-point {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 1.2rem;
+      margin: 1rem;
+      border-radius: 10px;
+      color: #00ffe7;
+      font-size: 1rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .game-card {
+      background: #232323;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,255,231,0.2);
+    }
+
+    .game-card h3 {
+      margin: 0 0 0.5rem;
+      color: #00ffe7;
+    }
+
+    .game-card p {
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    footer {
+      background: #0f0f0f;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: gray;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gaming Atmos</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for games...">
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Action</a>
+    <a href="#">Adventure</a>
+    <a href="#">Shooting</a>
+    <a href="#">Open World</a>
+    <a href="#">Puzzle</a>
+    <a href="#">Racing</a>
+    <a href="#">Horror</a>
+    <a href="#">Under 1 GB</a>
+    <a href="#">Multiplayer</a>
+  </nav>
+
+  <div class="special-point">
+    🎯 Special Highlight: Daily New Games Uploaded at 9 PM!
+  </div>
+<h1 style="color: white;">Hello Test</h1>
+<h1 style="color: white;">Hello Test</h1>
+
+  <div class="content">
+    <div class="game-card">
+      <h3>Cyber Shooter</h3>
+      <p>A futuristic FPS with neon guns and offline mode.</p>
+    </div>
+    <div class="game-card">
+      <h3>Shadow Puzzle</h3>
+      <p>Use logic to escape the dark realm. Brain game for all ages.</p>
+    </div>
+    <div class="game-card">
+      <h3>Speed Drive X</h3>
+      <p>High-octane racing in 300MB. Android-friendly!</p>
+    </div>
+    <div class="game-card">
+      <h3>Zombie City</h3>
+      <p>Open world survival with thrilling horror missions.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Gaming Atmos. All rights reserved.
+  </footer>
+</body>
+</html>
